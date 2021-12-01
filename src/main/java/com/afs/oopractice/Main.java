@@ -2,9 +2,11 @@ package com.afs.oopractice;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car("BMW",30);
+        GasolineEngine gasolineEngine = new GasolineEngine();
+        Car car = new Car("BMW", gasolineEngine);
         car.speedUp();
-        Truck truck = new Truck("Benz", 10);
-        truck.speedUp();
+        EletricEngine eletricEngine = new EletricEngine();
+        Car car1 = new Car("BMW", eletricEngine);
+        car1.speedUp();
     }
 }
